@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self';">
+  <link rel="stylesheet" href="styles.css">
+  <title>Clawd</title>
+</head>
+<body>
+  <div id="pet-container">
+    <object id="clawd" type="image/svg+xml" data="../assets/svg/clawd-idle-follow.svg"></object>
+    <button id="chat-toggle" title="chat">…</button>
+    <div id="status-dot" title="bridge status"></div>
+    <div id="chat-bubble"></div>
+    <div id="chat-panel">
+      <input id="chat-input" placeholder="跟我说句话… /code 任务" maxlength="160" />
+      <button id="chat-send">说</button>
+    </div>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>

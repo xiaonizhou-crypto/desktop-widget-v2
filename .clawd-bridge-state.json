@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "mode": "dedicated-session-pending",
+  "sessionKey": "agent:main:chat-clawd",
+  "bridgeUrl": "http://127.0.0.1:4317/chat",
+  "voice": "Grandpa (英语（美国）)",
+  "updatedAt": 1774090000000
+}

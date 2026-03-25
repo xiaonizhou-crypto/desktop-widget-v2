@@ -1,0 +1,55 @@
+{
+  "name": "desktop-widget-v2",
+  "version": "0.1.0",
+  "description": "Clawd desktop widget v2 based on clawd-on-desk motion system.",
+  "main": "src/main.js",
+  "scripts": {
+    "pet": "chmod +x scripts/pet-start.sh scripts/pet-stop.sh scripts/pet-log.sh && ./scripts/pet-start.sh",
+    "pet:stop": "chmod +x scripts/pet-start.sh scripts/pet-stop.sh scripts/pet-log.sh && ./scripts/pet-stop.sh",
+    "pet:log": "chmod +x scripts/pet-start.sh scripts/pet-stop.sh scripts/pet-log.sh && ./scripts/pet-log.sh",
+    "start": "electron .",
+    "build": "electron-builder --win",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["clawd", "desktop-pet", "electron", "claude-code"],
+  "author": "rullerzhou-afk",
+  "license": "MIT",
+  "type": "commonjs",
+  "build": {
+    "appId": "com.clawd.on-desk",
+    "productName": "Clawd on Desk",
+    "win": {
+      "icon": "assets/icon.ico",
+      "signAndEditExecutable": false,
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "assets/icon.ico",
+      "uninstallerIcon": "assets/icon.ico",
+      "installerHeaderIcon": "assets/icon.ico"
+    },
+    "files": [
+      "src/**/*",
+      "assets/svg/**/*",
+      "assets/tray-icon.png",
+      "hooks/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "assets/icon.ico",
+        "to": "icon.ico"
+      }
+    ]
+  },
+  "devDependencies": {
+    "electron": "^41.0.2",
+    "electron-builder": "^26.8.1"
+  }
+}
