@@ -76,8 +76,8 @@ Drag Clawd to the right screen edge (or right-click → "极简模式") to enter
 
 ```bash
 # Clone the repo
-git clone https://github.com/rullerzhou-afk/clawd-on-desk.git
-cd clawd-on-desk
+git clone https://github.com/xiaonizhou-crypto/desktop-widget-v2.git
+cd desktop-widget-v2
 
 # Install dependencies
 npm install
