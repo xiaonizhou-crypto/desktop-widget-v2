@@ -76,8 +76,8 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/rullerzhou-afk/clawd-on-desk.git
-cd clawd-on-desk
+git clone https://github.com/xiaonizhou-crypto/desktop-widget-v2.git
+cd desktop-widget-v2
 
 # 安装依赖
 npm install
